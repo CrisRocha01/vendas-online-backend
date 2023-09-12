@@ -1,0 +1,40 @@
+*instalar(global): npm i -g @nestjs/cli
+*criar o projeto: nest new nome-do-projeto
+
+*iniciar o servidor em desenvolvimento: npm run start:dev
+
+
+
+modulos:
+ - app.module.ts: indica quais módulos a aplicação terá acesso;
+
+* criar pasta:	nest g module user (criar pasta user e arquivo 'user.module.ts')
+		nest g controller user (criar pasta user - se não existir - e arquivo 'user.controller.ts')
+
+correção do eslint:
+ctrl+p, digitar >, open use setting json e colar:
+	{
+
+"editor.codeActionsOnSave":
+
+    {
+
+         "source.fixAll.eslint": true
+
+    },
+
+     "eslint.validate": ["javascript"]
+
+}
+
+
+
+
+get: buscar dados;
+post: enviar/salvar informação (pode usar um corpo com informação)
+put: editar todos os dados do usuário;
+path: mudar um dado em específico
+delete: apaga por id
+
+DTO: Data transfer (o usuário envia)
+interface: os dados do usuário (o objeto com os dados manipulados)
